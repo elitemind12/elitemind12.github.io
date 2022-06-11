@@ -1,0 +1,51 @@
+body {
+   
+    font-family: "Nunito", sans-serif;
+}
+#profile {
+    background-color: #343353ff;
+    /* margin-top: 5em; */
+    color: #FFFFFFff;
+    padding: 7em 0;
+}
+#profile h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+#userImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 45% 45% 45% 45%;
+}
+#userSocialIcons {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+}
+#userStatus {
+    color: rgba(255, 255, 255, 0.575);
+}
+#profile button {
+    border: none;
+    border-radius: 30px;
+    background-color: #FF4C61ff;
+    margin-bottom: 2em;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 2em;
+    color: #FFFFFFff;
+    transition: 0.5s ease-out;
+}
+#profile button:hover {
+    background-color: #FFFFFFff;
+    color: #343353ff;
+    border: 1px solid #FF4C61ff;
+}
+#mainNavbar {
+    background-color: #343353ff;
+    color: #FFFFFFff;
+}
+@media (min-width:900px) {
+    #profile h2 {
+        font-size: 2rem;
+    }
+}
