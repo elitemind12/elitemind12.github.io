@@ -1,5 +1,5 @@
 body {
-   
+     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
 #profile {
@@ -17,9 +17,13 @@ body {
     height: 80px;
     border-radius: 45% 45% 45% 45%;
 }
-#userSocialIcons {
+#userSocialIcons span i {
     font-size: 1.4em;
     margin-bottom: 0.5em;
+    transition: 0.5s ease-out;
+}
+#userSocialIcons span i:hover, #userSocialIcons span i:focus {
+    color: yellow;
 }
 #userStatus {
     color: rgba(255, 255, 255, 0.575);
@@ -31,21 +35,80 @@ body {
     margin-bottom: 2em;
     font-size: 1em;
     font-weight: 600;
-    padding: 0.5em 2em;
+    padding: 0.3em 1.7em;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
-#profile button:hover {
+#profile button:hover, #profile button:focus {
     background-color: #FFFFFFff;
     color: #343353ff;
     border: 1px solid #FF4C61ff;
+}
+#AboutImg {
+    width: 130px;
+    height: 130px;
+    border-radius: 45% 45% 45% 45%;
+}
+#AboutMe {
+    margin-top: -3em;
+    background-color: rgb(238, 238, 240);
+    padding-top: 3em;
+    padding-bottom: 4em;
+}
+#AboutMe div h2 {
+    color: #272746ff;
+    font-size: 28px;
+    font-weight: 1000;
+}
+#aboutInfoCard{
+    border: 2px solid rgb(230, 230, 233);
+    border-radius: 10px;
+    padding: 1.1em 0.5em;
+    margin: 2em 4em;
+    background-color: #FFFFFFff;
 }
 #mainNavbar {
     background-color: #343353ff;
     color: #FFFFFFff;
 }
-@media (min-width:900px) {
+
+#aboutInfoCard > div > button {
+    border: none;
+    border-radius: 30px;
+    background-color: #FF4C61ff;
+    margin-bottom: 2em;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.3em 2em;
+    color: #FFFFFFff;
+    transition: 0.5s ease-out;
+}
+#aboutInfoCard > div > button:hover, #aboutInfoCard > div > button:focus {
+    background-color: #FFFFFFff;
+    color: #343353ff;
+    border: 1px solid #FF4C61ff;
+}
+#aboutInfoCard > div > p {
+    color: rgb(130, 130, 136);
+    font-size: 0.8em;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+#aboutInfoCard > div > h5 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: rgb(96, 96, 100);
+}
+@media (min-width:950px) {
     #profile h2 {
         font-size: 2rem;
+    }
+    #aboutInfoCard{
+        
+        margin: 0em 0em;
+    }
+    #AboutImg {
+        margin-left: 7em;
     }
 }
