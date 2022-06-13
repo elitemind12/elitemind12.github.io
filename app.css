@@ -1,7 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body {
      box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
+
 #profile {
     background-color: #343353ff;
     /* margin-top: 5em; */
@@ -50,10 +56,10 @@ body {
     border-radius: 45% 45% 45% 45%;
 }
 #AboutMe {
-    margin-top: -3em;
+    /* margin-top: -3em; */
     background-color: rgb(238, 238, 240);
-    padding-top: 3em;
-    padding-bottom: 4em;
+    /* padding-top: 3em;
+    padding-bottom: 4em; */
 }
 #AboutMe div h2 {
     color: #272746ff;
@@ -63,8 +69,8 @@ body {
 #aboutInfoCard{
     border: 2px solid rgb(230, 230, 233);
     border-radius: 10px;
-    padding: 1.1em 0.5em;
-    margin: 2em 4em;
+     margin: 1.5em;
+    
     background-color: #FFFFFFff;
 }
 #mainNavbar {
@@ -100,14 +106,49 @@ body {
     font-weight: 600;
     color: rgb(96, 96, 100);
 }
+#services {
+    background-color: rgb(238, 238, 240);
+}
+#services h2 {
+    color: #272746ff;
+    font-size: 28px;
+    font-weight: 1000;
+}
+.col-md-3 {
+    border: 2px solid rgb(238, 238, 240);
+    border-radius: 15px;
+}
+.col-md-3 img {
+    width: 65px;
+}
+.col-md-3 h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.col-md-3 p {
+    font-size: 0.8em;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.service-one {
+    background-color: #6C6CE6ff;
+    color: #E9EAF8ff;
+}
+.service-two {
+    background-color: #E6C150ff;
+}
+.service-three {
+    background-color: #FF4C61ff;
+    color: #E9EAF8ff;
+}
 @media (min-width:950px) {
     #profile h2 {
         font-size: 2rem;
     }
-    #aboutInfoCard{
-        
+     #aboutInfoCard{ 
         margin: 0em 0em;
-    }
+    } 
     #AboutImg {
         margin-left: 7em;
     }
