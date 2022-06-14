@@ -153,7 +153,7 @@ body {
     position: absolute;
     height: 93%;
     width: 2px;
-    background: #FDACB5ff;
+    background: rgb(252, 86, 105);
     /* left: 10%; */
     /* margin-right: 2em; */
     transform: translate();
@@ -172,7 +172,7 @@ body {
       line-height: 25px;
       border-radius: 50%;
       left: 0.7em;
-      color: #FDACB5ff;
+      color: rgb(252, 86, 105);
   }
 .year {
       display: inline;
@@ -182,8 +182,8 @@ body {
   }
   .col-md-4 section h2 {
     margin-top: 0.5em;
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 1.1em;
+    font-weight: 1000;
   }
   .col-md-4 section p {
     font-size: 0.8em;
