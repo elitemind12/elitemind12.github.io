@@ -240,10 +240,9 @@ body {
     border: none;
     border-radius: 30px;
     background-color: #FF4C61ff;
-    margin-bottom: 2em;
     font-size: 1em;
     font-weight: 600;
-    padding: 0.3em 1.7em;
+    padding: 0.5em 1.2em;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
@@ -251,6 +250,125 @@ body {
     background-color: #FFFFFFff;
     color: #343353ff;
     border: 1px solid #FF4C61ff;
+}
+#pricingPlan {
+    background-color: rgb(238, 238, 240);
+}
+.pricing-header h2 {
+    color: #272746ff;
+    font-size: 28px;
+    font-weight: 1000;
+}
+.plan {
+    border: 2px solid rgb(230, 230, 233);
+    border-radius: 15px;
+    background-color: #FFFFFFff;
+}
+.unique {
+    background-color: #6C6CE6ff;
+    color: #E9EAF8ff;
+}
+
+.plan img {
+      width: 5em;
+      height: 5em;
+}
+.plan h2 {
+    font-size: 1.4em;
+    font-weight: 1000;
+}
+.plan p, span> sub, sup{
+    font-size: 0.8em;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: rgb(83, 83, 85);
+}
+.unique p {
+    color: #E9EAF8ff;
+}
+.unique-sub {
+    color: #E9EAF8ff;
+}
+.support {
+    display: block;
+    color: rgb(83, 83, 85);
+    font-size: 1.1em;
+    font-weight: 1000;
+}
+.unique .support {
+    color: #E9EAF8ff;
+}
+.price {
+    display: block;
+}
+.price-currency {
+    font-size: 1.8em;
+    font-weight: 1000;
+}
+.plan button {
+    border: none;
+    border-radius: 30px;
+    background-color: #FF4C61ff;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.3em 1.2em;
+    color: #FFFFFFff;
+    transition: 0.5s ease-out;
+}
+.plan button:hover, .plan button:focus {
+    background-color: #FFFFFFff;
+    color: #343353ff;
+    border: 1px solid #FF4C61ff;
+}
+#getInTouch{
+    background-color: rgb(238, 238, 240);
+}
+.intouchHeader h2 {
+    color: #272746ff;
+    font-size: 28px;
+    font-weight: 1000;
+}
+.intouchDescription {
+    font-size: 1em;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: rgb(108, 108, 110);
+}
+.inTouchEmail {
+    font-size: 1em;
+    font-weight: 1000;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: rgb(108, 108, 110);
+}
+.email{
+    color: #FF4C61ff;
+}
+.form-row button {
+    border: none;
+    border-radius: 30px;
+    background-color: #FF4C61ff;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.5em 1.2em;
+    color: #FFFFFFff;
+    transition: 0.5s ease-out;
+}
+.form-row button:hover, .form-row button:focus {
+    background-color: #FFFFFFff;
+    color: #343353ff;
+    border: 1px solid #FF4C61ff;
+}
+.form-control {
+    border-radius: 30px;
+    border: 2px solid rgb(230, 230, 233);
+    background-color: #FFFFFFff;
+}
+#footer {
+    background-color: #343353ff;
+    color: rgb(187, 187, 194);
 }
 @media (min-width:950px) {
     #profile h2 {
