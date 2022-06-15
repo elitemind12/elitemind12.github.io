@@ -23,7 +23,14 @@ body {
      box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
+#mainNavbar .nav-link {
+    font-size: 1em;
+    font-weight: 500;
+}
 
+#mainNavbar .nav-link:hover {
+    color: yellow;
+}
 #profile {
     background-color: #343353ff;
     /* margin-top: 5em; */
