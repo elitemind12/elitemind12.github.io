@@ -1,3 +1,19 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ ul, li
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+ ul {
+	list-style: none;
+}
 * {
     padding: 0;
     margin: 0;
@@ -113,18 +129,18 @@ body {
     font-size: 28px;
     font-weight: 1000;
 }
-.col-md-3 {
+.job {
     border: 2px solid rgb(238, 238, 240);
     border-radius: 15px;
 }
-.col-md-3 img {
+.job img {
     width: 65px;
 }
-.col-md-3 h3 {
+.job h3 {
     font-size: 1.3em;
     font-weight: 600;
 }
-.col-md-3 p {
+.job p {
     font-size: 0.8em;
     font-weight: 800;
     line-height: 1.5;
@@ -159,9 +175,9 @@ body {
     transform: translate();
   }
   .col-md-4 {
-      border: 3px solid rgb(238, 238, 240);
-      border-radius: 15px;
-      background-color: #FFFFFFff;
+    border: 2px solid rgb(230, 230, 233);
+    border-radius: 10px;
+    background-color: #FFFFFFff;
   }
  .icon {
       position: absolute;
@@ -191,6 +207,50 @@ body {
     line-height: 1.5;
     letter-spacing: 1px;
     color: rgb(130, 130, 136);
+}
+.works-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(67, 67, 68);
+    font-weight: 800;
+    font-size: medium;
+}
+#recentWorks {
+    background-color: rgb(238, 238, 240);
+}
+#recentWorks h2 {
+    color: #272746ff;
+    font-size: 28px;
+    font-weight: 1000;
+}
+
+.brand {
+    border: 2px solid rgb(230, 230, 233);
+    border-radius: 15px;
+    background-color: #FFFFFFff;
+}
+.brand img {
+    width: 10em;
+    height: 10em;
+}
+.loadBtn button {
+    border: none;
+    border-radius: 30px;
+    background-color: #FF4C61ff;
+    margin-bottom: 2em;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0.3em 1.7em;
+    color: #FFFFFFff;
+    transition: 0.5s ease-out;
+}
+.loadBtn button:hover, .loadBtn button:focus {
+    background-color: #FFFFFFff;
+    color: #343353ff;
+    border: 1px solid #FF4C61ff;
 }
 @media (min-width:950px) {
     #profile h2 {
