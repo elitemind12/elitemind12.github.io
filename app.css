@@ -27,6 +27,9 @@ body {
     font-size: 1em;
     font-weight: 500;
 }
+#mainNavbar .navbar-brand {
+color: #ffbf69;
+}
 
 #mainNavbar .nav-link:hover {
     color: yellow;
