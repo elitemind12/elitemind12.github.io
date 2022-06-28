@@ -246,6 +246,7 @@ color: #ffbf69;
 .brand img {
     width: 10em;
     height: 10em;
+    border-radius: 10px;
 }
 .loadBtn button {
     border: none;
