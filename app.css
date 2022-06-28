@@ -93,7 +93,7 @@ ul {
     border: 1px solid #FF4C61ff;
 }
 
-.AboutImg {
+#AboutImg {
     width: 130px;
     height: 130px;
     border-radius: 45% 45% 45% 45%;
@@ -466,7 +466,7 @@ sup {
         margin: 0em 0em;
     }
 
-    .AboutImg {
+    #AboutImg {
         margin-left: 7em;
     }
 }
