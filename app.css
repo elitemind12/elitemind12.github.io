@@ -2,65 +2,81 @@
    v2.0 | 20110126
    License: none (public domain)
 */
- ul, li
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
- ul {
-	list-style: none;
-}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
-     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+ul {
+    list-style: none;
+}
+
+#mainNavbar {
+    background-color: #343353ff;
+    color: #FFFFFFff;
+}
+
 #mainNavbar .nav-link {
     font-size: 1em;
     font-weight: 500;
 }
+
 #mainNavbar .navbar-brand {
-color: #ffbf69;
+    color: #ffbf69;
 }
 
 #mainNavbar .nav-link:hover {
     color: yellow;
 }
+
 #profile {
     background-color: #343353ff;
-    /* margin-top: 5em; */
     color: #FFFFFFff;
     padding: 7em 0;
 }
+
 #profile h2 {
     font-size: 1.5em;
     font-weight: 600;
 }
+
 #userImg {
     width: 80px;
     height: 80px;
     border-radius: 45% 45% 45% 45%;
 }
+
 #userSocialIcons span a i {
     font-size: 1.4em;
     margin-bottom: 0.5em;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
-#userSocialIcons span a i:hover, #userSocialIcons span i:focus {
+
+#userSocialIcons span a i:hover,
+#userSocialIcons span i:focus {
     color: yellow;
 }
+
 #userStatus {
     color: rgba(255, 255, 255, 0.575);
 }
+
 #profile button {
     border: none;
     border-radius: 30px;
@@ -72,39 +88,39 @@ color: #ffbf69;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
-#profile button:hover, #profile button:focus {
+
+#profile button:hover,
+#profile button:focus {
     background-color: #FFFFFFff;
     color: #343353ff;
     border: 1px solid #FF4C61ff;
 }
+
 #AboutImg {
     width: 130px;
     height: 130px;
     border-radius: 45% 45% 45% 45%;
 }
+
 #AboutMe {
-    /* margin-top: -3em; */
     background-color: rgb(238, 238, 240);
-    /* padding-top: 3em;
-    padding-bottom: 4em; */
 }
+
 #AboutMe div h2 {
     color: #272746ff;
     font-size: 28px;
     font-weight: 1000;
 }
-#aboutInfoCard{
-    border: 2px solid rgb(230, 230, 233);
+
+#aboutInfoCard {
+    border: none;
     border-radius: 10px;
-     margin: 1.5em;
+    margin: 1.5em;
     background-color: #FFFFFFff;
-}
-#mainNavbar {
-    background-color: #343353ff;
-    color: #FFFFFFff;
+    filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
 
-#aboutInfoCard > div > button {
+#aboutInfoCard>div>button {
     border: none;
     border-radius: 30px;
     background-color: #FF4C61ff;
@@ -115,67 +131,84 @@ color: #ffbf69;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
-#aboutInfoCard > div > button:hover, #aboutInfoCard > div > button:focus {
+
+#aboutInfoCard>div>button:hover,
+#aboutInfoCard>div>button:focus {
     background-color: #FFFFFFff;
     color: #343353ff;
     border: 1px solid #FF4C61ff;
 }
-#aboutInfoCard > div > p {
+
+#aboutInfoCard>div>p {
     color: rgb(130, 130, 136);
     font-size: 0.8em;
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 1px;
 }
-#aboutInfoCard > div > h5 {
+
+#aboutInfoCard>div>h5 {
     font-size: 1.1em;
     font-weight: 600;
     color: rgb(96, 96, 100);
 }
+
 #services {
     background-color: rgb(238, 238, 240);
 }
+
 #services div h2 {
     color: #272746ff;
     font-size: 28px;
     font-weight: 1000;
 }
+
 .job {
-    border: 2px solid rgb(238, 238, 240);
+    border: none;
     border-radius: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
+
 .job img {
     width: 65px;
 }
+
 .job h3 {
     font-size: 1.3em;
     font-weight: 600;
 }
+
 .job p {
     font-size: 0.8em;
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 1px;
 }
+
 .service-one {
     background-color: #6C6CE6ff;
     color: #E9EAF8ff;
 }
+
 .service-two {
     background-color: #E6C150ff;
 }
+
 .service-three {
     background-color: #FF4C61ff;
     color: #E9EAF8ff;
 }
+
 #experience {
     background-color: rgb(238, 238, 240);
 }
+
 .experience h2 {
     color: #272746ff;
     font-size: 28px;
     font-weight: 1000;
 }
+
 .center-line {
     position: absolute;
     height: 93%;
@@ -184,41 +217,48 @@ color: #ffbf69;
     /* left: 10%; */
     /* margin-right: 2em; */
     transform: translate();
-  }
-  .col-md-4 {
-    border: 2px solid rgb(230, 230, 233);
+}
+
+.col-md-4 {
+    border: none;
     border-radius: 10px;
     background-color: #FFFFFFff;
-  }
- .icon {
-      position: absolute;
-      background-color: #fff;
-      height: 30px;
-      width: 30px;
-      text-align: center;
-      line-height: 25px;
-      border-radius: 50%;
-      left: 0.7em;
-      color: rgb(252, 86, 105);
-  }
+    filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
+}
+
+.icon {
+    position: absolute;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    left: 0.7em;
+    color: rgb(252, 86, 105);
+}
+
 .year {
-      display: inline;
-      font-size: 0.8em;
-      font-weight: 500;
-      color: rgb(130, 130, 136);
-  }
-  .col-md-4 section h2 {
+    display: inline;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgb(130, 130, 136);
+}
+
+.col-md-4 section h2 {
     margin-top: 0.5em;
     font-size: 1.1em;
     font-weight: 1000;
-  }
-  .col-md-4 section p {
+}
+
+.col-md-4 section p {
     font-size: 0.8em;
     font-weight: 1000;
     line-height: 1.5;
     letter-spacing: 1px;
     color: rgb(130, 130, 136);
 }
+
 .works-category {
     display: flex;
     flex-direction: row;
@@ -229,9 +269,11 @@ color: #ffbf69;
     font-weight: 800;
     font-size: medium;
 }
+
 #recentWorks {
     background-color: rgb(238, 238, 240);
 }
+
 #recentWorks h2 {
     color: #272746ff;
     font-size: 28px;
@@ -239,15 +281,21 @@ color: #ffbf69;
 }
 
 .brand {
-    border: 2px solid rgb(230, 230, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
     border-radius: 15px;
     background-color: #FFFFFFff;
+    filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
+
 .brand img {
     width: 10em;
     height: 10em;
     border-radius: 10px;
 }
+
 .loadBtn button {
     border: none;
     border-radius: 30px;
@@ -258,66 +306,84 @@ color: #ffbf69;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
-.loadBtn button:hover, .loadBtn button:focus {
+
+.loadBtn button:hover,
+.loadBtn button:focus {
     background-color: #FFFFFFff;
     color: #343353ff;
     border: 1px solid #FF4C61ff;
 }
+
 #pricingPlan {
     background-color: rgb(238, 238, 240);
 }
+
 .pricing-header h2 {
     color: #272746ff;
     font-size: 28px;
     font-weight: 1000;
 }
+
 .plan {
-    border: 2px solid rgb(230, 230, 233);
+    border: none;
     border-radius: 15px;
     background-color: #FFFFFFff;
+    filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
+
 .unique {
     background-color: #6C6CE6ff;
     color: #E9EAF8ff;
 }
 
 .plan img {
-      width: 5em;
-      height: 5em;
+    width: 5em;
+    height: 5em;
 }
+
 .plan h2 {
     font-size: 1.4em;
     font-weight: 1000;
 }
-.plan p, span> sub, sup{
+
+.plan p,
+span>sub,
+sup {
     font-size: 0.8em;
     font-weight: 1000;
     line-height: 1.5;
     letter-spacing: 1px;
     color: rgb(83, 83, 85);
 }
+
 .unique p {
     color: #E9EAF8ff;
 }
+
 .unique-sub {
     color: #E9EAF8ff;
 }
+
 .support {
     display: block;
     color: rgb(83, 83, 85);
     font-size: 1.1em;
     font-weight: 1000;
 }
+
 .unique .support {
     color: #E9EAF8ff;
 }
+
 .price {
     display: block;
 }
+
 .price-currency {
     font-size: 1.8em;
     font-weight: 1000;
 }
+
 .plan button {
     border: none;
     border-radius: 30px;
@@ -328,19 +394,24 @@ color: #ffbf69;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
-.plan button:hover, .plan button:focus {
+
+.plan button:hover,
+.plan button:focus {
     background-color: #FFFFFFff;
     color: #343353ff;
     border: 1px solid #FF4C61ff;
 }
-#getInTouch{
+
+#getInTouch {
     background-color: rgb(238, 238, 240);
 }
+
 .intouchHeader h2 {
     color: #272746ff;
     font-size: 28px;
     font-weight: 1000;
 }
+
 .intouchDescription {
     font-size: 1em;
     font-weight: 1000;
@@ -348,6 +419,7 @@ color: #ffbf69;
     letter-spacing: 1px;
     color: rgb(108, 108, 110);
 }
+
 .inTouchEmail {
     font-size: 1em;
     font-weight: 1000;
@@ -355,9 +427,11 @@ color: #ffbf69;
     letter-spacing: 1px;
     color: rgb(108, 108, 110);
 }
-.email{
+
+.email {
     color: #FF4C61ff;
 }
+
 .form-row button {
     border: none;
     border-radius: 30px;
@@ -368,28 +442,51 @@ color: #ffbf69;
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
-.form-row button:hover, .form-row button:focus {
+
+.form-row button:hover,
+.form-row button:focus {
     background-color: #FFFFFFff;
     color: #343353ff;
     border: 1px solid #FF4C61ff;
 }
+
 .form-control {
     border-radius: 30px;
     border: 2px solid rgb(230, 230, 233);
     background-color: #FFFFFFff;
 }
+
 #footer {
     background-color: #343353ff;
     color: rgb(187, 187, 194);
 }
+
 @media (min-width:950px) {
     #profile h2 {
         font-size: 2rem;
     }
-     #aboutInfoCard{ 
+
+    #aboutInfoCard {
         margin: 0em 0em;
-    } 
+    }
+
     #AboutImg {
         margin-left: 7em;
     }
+}
+
+@media (max-width:420px) {
+    .works-category {
+        font-size: 0.8em;
+    }
+    .brand {
+        height: 200px;
+        width: 250px;
+    }
+    
+    .brand img {
+        width: 210px;
+        height: 160px;
+    }
+    
 }
