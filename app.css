@@ -1,8 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-* {
+
+html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -96,7 +93,7 @@ ul {
     border: 1px solid #FF4C61ff;
 }
 
-#AboutImg {
+.AboutImg {
     width: 130px;
     height: 130px;
     border-radius: 45% 45% 45% 45%;
@@ -113,7 +110,6 @@ ul {
 }
 
 #aboutInfoCard {
-    border: none;
     border-radius: 10px;
     margin: 1.5em;
     background-color: #FFFFFFff;
@@ -470,7 +466,7 @@ sup {
         margin: 0em 0em;
     }
 
-    #AboutImg {
+    .AboutImg {
         margin-left: 7em;
     }
 }
@@ -488,5 +484,5 @@ sup {
         width: 210px;
         height: 160px;
     }
-    
+
 }
