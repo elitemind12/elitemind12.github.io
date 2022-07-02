@@ -161,6 +161,8 @@ ul {
 .job {
     border: none;
     border-radius: 15px;
+    padding: 1em 1.2em;
+    margin: 1.2em 1em;
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
 
@@ -202,6 +204,7 @@ ul {
     color: #272746ff;
     font-size: 28px;
     font-weight: 1000;
+    margin-bottom: 1.5em;
 }
 
 .center-line {
@@ -218,6 +221,8 @@ ul {
     border: none;
     border-radius: 10px;
     background-color: #FFFFFFff;
+    margin: 1.3em 1em;
+    padding: 1em 1.2em;
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
 
@@ -322,6 +327,8 @@ ul {
 .plan {
     border: none;
     border-radius: 15px;
+    margin: 1em 1em;
+    padding: 1.2em 1em;
     background-color: #FFFFFFff;
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
@@ -486,5 +493,14 @@ sup {
     }
     #aboutInfoCard {
         margin: 1.5em 0.5em;
+    }
+    .job {
+        margin: 1.2em 1.6em; 
+    }
+    .col-md-4 {
+        margin: 1.3em 1.6em;
+    }
+    .plan {
+        margin: 1em 1.6em;
     }
 }
