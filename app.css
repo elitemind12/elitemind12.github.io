@@ -55,6 +55,7 @@ ul {
     width: 80px;
     height: 80px;
     border-radius: 45% 45% 45% 45%;
+    background-color: #fcbf49;
 }
 
 #userSocialIcons span a i {
@@ -96,6 +97,7 @@ ul {
     width: 130px;
     height: 130px;
     border-radius: 45% 45% 45% 45%;
+    background-color: #fcbf49;
 }
 
 #AboutMe {
