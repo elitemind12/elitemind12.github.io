@@ -1,3 +1,4 @@
+
 const resolver = {
     resolve: function resolve(options, callback) {
         // The string to resolve
@@ -62,7 +63,18 @@ const resolver = {
 };
 
 const strings = [
-    'Hi there, my name is Daniel Joseph Makyao. Born and raised in Dar es Salaam, Tanzania. Professionally I am an IT technician based in Web Development. I started Web Development in year 2020 and since then I have been obsessed in web technologies and programming in general. Other than Web Development I also have a good knowledge and skills in designing.',
+    'Im a web developer',
+    'ui/ux designer',
+    'programmer',
+    'I code for living',
+    'I like teamwork',
+    '...oh yaah I appreciate you',
+    'for open my site',
+    'wish you a cool scrolling',
+    'just do it',
+    'and don forgot to email me',
+    'good lucky',
+    '....'
 ]
 
 
@@ -95,7 +107,10 @@ function callback() {
 
         let nextOptions = Object.assign({}, options, { resolveString: strings[counter] });
         resolver.resolve(nextOptions, callback);
-    }, 5000);
+    }, 2000);
 }
 
 resolver.resolve(options, callback);
+
+
+//LOADING

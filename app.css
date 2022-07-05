@@ -72,6 +72,7 @@ ul {
 
 #userStatus {
     color: rgba(255, 255, 255, 0.575);
+    transition: 2s ease-out;
 }
 
 #profile button {
@@ -116,7 +117,6 @@ ul {
     margin: 1.5em;
     background-color: #FFFFFFff;
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
-    transition: 1s ease-in-out;
 }
 
 
@@ -145,7 +145,6 @@ ul {
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 1px;
-    text-transform: uppercase;
 }
 
 #aboutInfoCard>div>h5 {
@@ -473,6 +472,7 @@ sup {
     #AboutMe {
         height: 500px;
     }
+
     #profile h2 {
         font-size: 2rem;
     }
@@ -498,6 +498,7 @@ sup {
         background-color: rgb(238, 238, 240);
         height: 900px;
     }
+
     .works-category {
         font-size: 0.8em;
     }
