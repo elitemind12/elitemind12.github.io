@@ -109,17 +109,20 @@ ul {
 }
 
 #aboutInfoCard {
+    position: sticky;
     border-radius: 10px;
     margin: 1.5em;
     background-color: #FFFFFFff;
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
+    transition: 1s ease-in-out;
 }
 
+
 #aboutInfoCard>div>button {
+    margin-bottom: 2em;
     border: none;
     border-radius: 30px;
     background-color: #FF4C61ff;
-    margin-bottom: 2em;
     font-size: 1em;
     font-weight: 600;
     padding: 0.3em 2em;
@@ -136,10 +139,11 @@ ul {
 
 #aboutInfoCard>div>p {
     color: rgb(130, 130, 136);
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 800;
     line-height: 1.5;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 #aboutInfoCard>div>h5 {
@@ -463,14 +467,24 @@ sup {
     color: rgb(187, 187, 194);
 }
 
-@media (min-width:950px) {
+@media (min-width:900px) {
+    #AboutMe {
+        height: 500px;
+    }
     #profile h2 {
         font-size: 2rem;
     }
 
     #aboutInfoCard {
+        /* height: 260px; */
         margin: 0em 0em;
+        margin-bottom: 2em;
     }
+
+    /* #aboutInfoCard>div>button {
+         position: absolute;
+        top: 150%; 
+    } */
 
     #AboutImg {
         margin-left: 7em;
@@ -478,6 +492,10 @@ sup {
 }
 
 @media (max-width:420px) {
+    #AboutMe {
+        background-color: rgb(238, 238, 240);
+        height: 900px;
+    }
     .works-category {
         font-size: 0.8em;
     }
@@ -491,15 +509,19 @@ sup {
         width: 210px;
         height: 160px;
     }
+
     #aboutInfoCard {
         margin: 1.5em 0.5em;
     }
+
     .job {
-        margin: 1.2em 1.6em; 
+        margin: 1.2em 1.6em;
     }
+
     .col-md-4 {
         margin: 1.3em 1.6em;
     }
+
     .plan {
         margin: 1em 1.6em;
     }
