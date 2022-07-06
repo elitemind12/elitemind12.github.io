@@ -1,9 +1,10 @@
-
 const resolver = {
     resolve: function resolve(options, callback) {
         // The string to resolve
         const resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
-        const combinedOptions = Object.assign({}, options, { resolveString: resolveString });
+        const combinedOptions = Object.assign({}, options, {
+            resolveString: resolveString
+        });
 
         function getRandomInteger(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -18,13 +19,12 @@ const resolver = {
             const timeout = options.timeout;
             const element = options.element;
             const partialString = options.partialString;
-
             let iterations = options.iterations;
-
             setTimeout(() => {
                 if (iterations >= 0) {
-                    const nextOptions = Object.assign({}, options, { iterations: iterations - 1 });
-
+                    const nextOptions = Object.assign({}, options, {
+                        iterations: iterations - 1
+                    });
                     // Ensures partialString without the random character as the final state.
                     if (iterations === 0) {
                         element.textContent = partialString;
@@ -32,7 +32,6 @@ const resolver = {
                         // Replaces the last character of partialString with a random character
                         element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
                     }
-
                     doRandomiserEffect(nextOptions, callback);
                 } else if (typeof callback === "function") {
                     callback();
@@ -45,11 +44,13 @@ const resolver = {
             const characters = options.characters;
             const offset = options.offset;
             const partialString = resolveString.substring(0, offset);
-            const combinedOptions = Object.assign({}, options, { partialString: partialString });
-
+            const combinedOptions = Object.assign({}, options, {
+                partialString: partialString
+            });
             doRandomiserEffect(combinedOptions, () => {
-                const nextOptions = Object.assign({}, options, { offset: offset + 1 });
-
+                const nextOptions = Object.assign({}, options, {
+                    offset: offset + 1
+                });
                 if (offset <= resolveString.length) {
                     doResolverEffect(nextOptions, callback);
                 } else if (typeof callback === "function") {
@@ -57,11 +58,9 @@ const resolver = {
                 }
             });
         };
-
         doResolverEffect(combinedOptions, callback);
     }
 };
-
 const strings = [
     'Im a web developer',
     'ui/ux designer',
@@ -74,12 +73,9 @@ const strings = [
     'just do it',
     'and don forgot to email me',
     'good lucky',
-    '....'
+    '....................'
 ]
-
-
 let counter = 0;
-
 const options = {
     // Initial position
     offset: 0,
@@ -94,23 +90,18 @@ const options = {
     // The element
     element: document.querySelector('[data-target-resolver]')
 };
-
-
 // Callback function when resolve completes
 function callback() {
     setTimeout(() => {
         counter++;
-
         if (counter >= strings.length) {
             counter = 0;
         }
-
-        let nextOptions = Object.assign({}, options, { resolveString: strings[counter] });
+        let nextOptions = Object.assign({}, options, {
+            resolveString: strings[counter]
+        });
         resolver.resolve(nextOptions, callback);
     }, 2000);
 }
-
 resolver.resolve(options, callback);
-
-
 //LOADING

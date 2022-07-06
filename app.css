@@ -59,7 +59,7 @@ ul {
 }
 
 #userSocialIcons span a i {
-    margin-top: 0.8em;
+    margin-top: 0.2em;
     font-size: 1.4em;
     margin-bottom: 0.5em;
     color: #FFFFFFff;
@@ -74,10 +74,9 @@ ul {
 #userStatus {
     text-align: center;
     color: rgba(255, 255, 255, 0.575);
-    transition: 2s ease-out;
-    position: absolute;
-    left: 120px;
-    top: 220px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
 }
 
 #profile button {
@@ -123,7 +122,6 @@ ul {
     background-color: #FFFFFFff;
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
-
 
 #aboutInfoCard>div>button {
     margin-bottom: 2em;
@@ -478,20 +476,19 @@ sup {
         height: 500px;
     }
 
+    #userStatus {
+        left: 600px;
+        top: 245px;
+    }
+
     #profile h2 {
         font-size: 2rem;
     }
 
     #aboutInfoCard {
-        /* height: 260px; */
         margin: 0em 0em;
         margin-bottom: 2em;
     }
-
-    /* #aboutInfoCard>div>button {
-         position: absolute;
-        top: 150%; 
-    } */
 
     #AboutImg {
         margin-left: 7em;
