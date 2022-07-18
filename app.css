@@ -79,6 +79,7 @@ ul {
     font-weight: 300;
 }
 
+
 #profile button {
     border: none;
     border-radius: 30px;
@@ -90,6 +91,8 @@ ul {
     color: #FFFFFFff;
     transition: 0.5s ease-out;
 }
+
+
 
 #profile button:hover,
 #profile button:focus {
@@ -123,6 +126,7 @@ ul {
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
 
+
 #aboutInfoCard>div>button {
     margin-bottom: 2em;
     border: none;
@@ -135,11 +139,21 @@ ul {
     transition: 0.5s ease-out;
 }
 
+#aboutInfoCard>div>button>a {
+    color: #FFFFFFff;
+    text-decoration: none;
+}
+
+#aboutInfoCard>div>button>a:hover, #aboutInfoCard>div>button>a:focus {
+    color: #FF4C61ff;
+    text-decoration: none;
+}
+
 #aboutInfoCard>div>button:hover,
 #aboutInfoCard>div>button:focus {
     background-color: #FFFFFFff;
-    color: #343353ff;
     border: 1px solid #FF4C61ff;
+    filter: drop-shadow(0 0 0.4rem #FF4C61ff);
 }
 
 #aboutInfoCard>div>p {
@@ -298,7 +312,8 @@ ul {
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
 
-.brand:hover,.brand:focus {
+.brand:hover,
+.brand:focus {
     filter: drop-shadow(0 0 0.8rem rgb(117, 223, 122));
 }
 
