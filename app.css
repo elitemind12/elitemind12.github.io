@@ -298,8 +298,12 @@ ul {
     filter: drop-shadow(0 0 0.75rem rgb(225, 216, 210));
 }
 
+.brand:hover,.brand:focus {
+    filter: drop-shadow(0 0 0.8rem rgb(117, 223, 122));
+}
+
 .brand img {
-    width: 10em;
+    width: 16em;
     height: 10em;
     border-radius: 10px;
 }
