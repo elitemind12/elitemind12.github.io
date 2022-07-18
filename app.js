@@ -63,17 +63,9 @@ const resolver = {
 };
 const strings = [
     'Im a web developer',
-    'ui/ux designer',
+    'web designer',
     'programmer',
-    'I code for living',
-    'I like teamwork',
-    '...oh yaah I appreciate you',
-    'for open my site',
-    'wish you a cool scrolling',
-    'just do it',
-    'and don forgot to email me',
-    'good lucky',
-    '....................'
+    '...'
 ]
 let counter = 0;
 const options = {
